@@ -1,14 +1,13 @@
 import random
 
-# Load English and Babine texts
-with open('english.txt', 'r') as file:
-    english_text = file.readlines()
-with open('babine.txt', 'r') as file:
+# load text files
+with open('eg1_bab.txt', 'r') as file:
     babine_text = file.readlines()
+with open('eg1_eng.txt', 'r') as file:
+    english_text = file.readlines()
 
-
-# Function to generate random 1-gram sentences
-def generate_1gram_text(text, n):
+# random 1-gram sentences
+def generate_1gram(text, n):
     sentences = []
     for _ in range(n):
         sentence = ''
